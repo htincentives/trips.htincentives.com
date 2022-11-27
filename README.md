@@ -1,6 +1,6 @@
 # trips.htincentives.com
 
-Source of code and deployment for the [trips.htincentives.com] website.
+Source of code and deployment for the [https://trips.htincentives.com](https://trips.htincentives.com) website.
 
 ## Updating files
 
