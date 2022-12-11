@@ -2,16 +2,22 @@ name: Broken Link Check
 
 on:
   push:
-    # branches:
-    #   - main
+  page_build:
+  workflow_dispatch:
 
 jobs:
   check-links:
     runs-on: ubuntu-latest
+    name: Check for broken links
     steps:
-      - name: Serve Files
-        run: |
-          npm install -g http-server
-          http-server &
-      - name: Check links for YokohomaMarona home page
-        run: npx broken-link-checker --get http://127.0.0.1:8080/YokohamaMaroma2023/home.html
+      - name: Check for broken links
+        id: link-report
+        uses: celinekurpershoek/link-checker@v1.0.2
+        with:
+          # Required:
+          url: "https://trips.htincentives.com/YokohamaMaroma2023/home.html"
+          # optional:
+          honorRobotExclusions: false
+          recursiveLinks: true # Check all URLs on all reachable pages (could take a while)
+      - name: Get the result
+        run: echo "${{steps.link-report.outputs.result}}"
