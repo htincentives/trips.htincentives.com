@@ -1,7 +1,6 @@
 name: Broken Link Check
 
 on:
-  push:
   page_build:
   workflow_dispatch:
 
