@@ -13,7 +13,7 @@ Source of code and deployment configuration for the [https://trips.htincentives.
 
 ## Deployment & Hosting
 
-The entire repository uses Github Pages to host the website.  The configuration for the trips.htincentive.com can be found here: [https://github.com/htincentives/trips.htincentives.com/settings/pages]
+The entire repository uses Github Pages to host the website.  The configuration for the trips.htincentive.com can be found in the [Settings page](https://github.com/htincentives/trips.htincentives.com/settings/pages).
 
 ### When is the site built?
 
@@ -28,4 +28,4 @@ Any file uploaded to the respository will show up to uses at `https://trips.htin
 
 ### What else does Github Pages offer?
 
-For more info, see: https://pages.github.com/
+For more info, see: [https://pages.github.com/](https://pages.github.com/)
