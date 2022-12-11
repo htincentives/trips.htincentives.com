@@ -53,9 +53,9 @@ function fadeSlideShow(settingarg){
 		setting.$gallerylayers=$('<div class="gallerylayer"></div><div class="gallerylayer"></div>') //two stacked DIVs to display the actual slide 
 			.css({position:'absolute', left:0, top:0, width:'100%', height:'100%', background:'black'})
 			.appendTo(setting.$wrapperdiv)
-		var $loadingimg=$('<img src="'+fadeSlideShow_descpanel.controls[2][0]+'" style="position:absolute;width:'+fadeSlideShow_descpanel.controls[2][1]+';height:'+fadeSlideShow_descpanel.controls[2][2]+'" />')
-			.css({left:setting.dimensions[0]/2-fadeSlideShow_descpanel.controls[2][1]/2, top:setting.dimensions[1]/2-fadeSlideShow_descpanel.controls[2][2]}) //center loading gif
-			.appendTo(setting.$wrapperdiv)
+		// var $loadingimg=$('<img src="'+fadeSlideShow_descpanel.controls[2][0]+'" style="position:absolute;width:'+fadeSlideShow_descpanel.controls[2][1]+';height:'+fadeSlideShow_descpanel.controls[2][2]+'" />')
+			// .css({left:setting.dimensions[0]/2-fadeSlideShow_descpanel.controls[2][1]/2, top:setting.dimensions[1]/2-fadeSlideShow_descpanel.controls[2][2]}) //center loading gif
+			// .appendTo(setting.$wrapperdiv)
 		var $curimage=setting.$gallerylayers.html(fullhtml).find('img').hide().eq(setting.curimage) //prefill both layers with entire slideshow content, hide all images, and return current image
 		if (setting.longestdesc!="" && setting.descreveal!="none"){ //if at least one slide contains a description (versus feature is enabled but no descriptions defined) and descreveal not explicitly disabled
 			fadeSlideShow.routines.adddescpanel($, setting)
@@ -79,12 +79,12 @@ function fadeSlideShow(settingarg){
 		setting.$wrapperdiv.bind('mouseenter', function(){setting.ismouseover=true}) //pause slideshow mouseover
 		setting.$wrapperdiv.bind('mouseleave', function(){setting.ismouseover=false})
 		if ($curimage.get(0).complete){ //accounf for IE not firing image.onload
-			$loadingimg.hide()
+			// $loadingimg.hide()
 			slideshow.paginateinit($)
 			slideshow.showslide(setting.curimage)
 		}
 		else{ //initialize slideshow when first image has fully loaded
-			$loadingimg.hide()
+			// $loadingimg.hide()
 			slideshow.paginateinit($)
 			$curimage.bind('load', function(){slideshow.showslide(setting.curimage)})
 		}
