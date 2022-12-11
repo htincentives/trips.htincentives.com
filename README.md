@@ -2,6 +2,8 @@
 
 [![Broken Link Check](https://github.com/htincentives/trips.htincentives.com/actions/workflows/broken-link-checker.yaml/badge.svg)](https://github.com/htincentives/trips.htincentives.com/actions/workflows/broken-link-checker.yaml)
 
+[![pages-build-deployment](https://github.com/htincentives/trips.htincentives.com/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/htincentives/trips.htincentives.com/actions/workflows/pages/pages-build-deployment)
+
 # trips.htincentives.com
 
 Source of code and deployment configuration for the [https://trips.htincentives.com](https://trips.htincentives.com) website.
@@ -17,7 +19,7 @@ The entire repository uses Github Pages to host the website.  The configuration 
 
 ### When is the site built?
 
-Whenever a new commit is made, the site is rebuilt. This can take between
+Whenever a new commit is made, the site is rebuilt. This can a minute or so. If you want to see the last builds or see the progress of the latest build, go to the [Actions tab for the Github Pages build and deployment job]((https://github.com/htincentives/trips.htincentives.com/actions/workflows/pages/pages-build-deployment).
 
 ### What files show up?
 
