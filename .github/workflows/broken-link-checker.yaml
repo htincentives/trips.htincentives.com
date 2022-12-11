@@ -9,10 +9,7 @@ jobs:
   build-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Check links using container
-        uses: ruzickap/action-my-broken-link-checker@v2
-        with:
-          url: https://trips.htincentives.com
-          pages_path: ./
-          cmd_params: '--skip-tls-verification --verbose --color=always'
-          debug: true
+      - name: Start local webserver
+        run: npx http-server
+      - name: Check links for YokohomaMarona home page
+        run: npx broken-link-checker http://localhost:8080/YokohamaMaroma2023/home.html
