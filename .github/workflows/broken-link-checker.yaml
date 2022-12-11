@@ -10,4 +10,4 @@ jobs:
     name: Check for broken links
     steps:
       - name: Check for broken links
-        run: npx broken-link-checker --recursive --filter-level=2 https://trips.htincentives.com/YokohamaMaroma2023/home.html
+        run: npx broken-link-checker --recursive --filter-level=2 https://trips.htincentives.com/YokohamaMaroma2023/
