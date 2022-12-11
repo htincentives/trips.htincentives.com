@@ -1,5 +1,7 @@
 ![Hodge Travel Incentives Logo](./_doc/img/htincentives-logo.png)
 
+[![Broken Link Check](https://github.com/htincentives/trips.htincentives.com/actions/workflows/broken-link-checker.yaml/badge.svg)](https://github.com/htincentives/trips.htincentives.com/actions/workflows/broken-link-checker.yaml)
+
 # trips.htincentives.com
 
 Source of code and deployment configuration for the [https://trips.htincentives.com](https://trips.htincentives.com) website.
