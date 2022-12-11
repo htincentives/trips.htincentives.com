@@ -8,7 +8,7 @@
 //May 24th, 10' (v2.4): Adds new "peakaboo" option to "descreveal" setting. oninit and onslide event handlers added.
 
 var fadeSlideShow_descpanel={
-	controls: [['x.png',7,7], ['restore.png',10,11], ['loading.gif',54,55]], //full URL and dimensions of close, restore, and loading images
+	controls: [['x.png',7,7], ['restore.png',10,11], ['./images/loading.gif',54,55]], //full URL and dimensions of close, restore, and loading images
 	fontStyle: 'normal 11px Verdana', //font style for text descriptions
 	slidespeed: 200 //speed of description panel animation (in millisec)
 }
